@@ -36,6 +36,7 @@ init
 	    using (var fs = System.IO.File.OpenRead(modules.First().FileName)) {
         var hash = string.Concat(md5.ComputeHash(fs).Select(b => b.ToString("X2")));
         if (hash == "A3C395779465AC4009796ED0964942D7") version = "1.0.9.0";
+        if (hash == "f55abdc919fcc87208674c5e78f33e02") version = "1.0.3.0";
         else version = "1.0.3.0";
     }
 
